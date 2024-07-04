@@ -12,8 +12,9 @@ RUN python3 -m venv venv && \
     pip install --no-cache-dir torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu && \
     pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
-COPY --chown=user:user ./app /code
+COPY --chown=user:user ./app /code/src
 
+ENV PYTHONPATH=src
 ENTRYPOINT [ "/code/venv/bin/python3" ]
 
 CMD ["/code/venv/bin/gunicorn", "main:app", "--workers 4", "--worker-class", \
