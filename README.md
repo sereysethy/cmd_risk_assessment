@@ -9,7 +9,7 @@ Once it is runs, go to [http://localhost:8000/docs](http://localhost:8000/docs "
 
 ## Configuration
 
-The risk model path is set in the config.json file.
+The risk model path is set in the `config.json` file.
 
 A default json config file that is located `/code`:
 
