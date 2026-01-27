@@ -41,3 +41,5 @@ This config file can be overried by mapping a custom file to `/code/config.json`
 In this case, the `var` folder has to be mapped to `/code/var` which should contain
 a trained risk model.
 
+The risk model has to be downloaded from the Hugging Face [https://huggingface.co/stouch/shell_cmd_risk_model](https://huggingface.co/stouch/shell_cmd_risk_model) due to its large size.
+
