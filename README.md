@@ -1,13 +1,30 @@
-# Shell Command Risk Assessment Model
+# Automated Risk Assessment of Shell-Based Attacks Using a LLM
 
-This a small application that will load the trained risk model and expose a single
+This is a small application that will load the trained risk model and expose a single
 API `cmds/risk`.
 
 The risk assessment model was trained following the work that was published in this conference paper [1].
 
 ### Citations:
 
-[1] Touch, S., Fink, J., & Colin, J. N. (2024, November). Automated Risk Assessment of Shell-Based Attacks Using a LLM. In *International Conference on Risks and Security of Internet and Systems* (pp. 173-189). Cham: Springer Nature Switzerland.
+```bibtex
+@inproceedings{touch2025automated,
+  author="Touch, Sereysethy
+  and Fink, J{\'e}r{\^o}me
+  and Colin, Jean-No{\"e}l",
+  editor="Collart-Dutilleul, Simon
+  and Ouchani, Samir
+  and Cuppens, Nora
+  and Cuppens, Fr{\'e}d{\'e}ric",
+  title="Automated Risk Assessment of Shell-Based Attacks Using a LLM",
+  booktitle="Risks and Security of Internet and Systems",
+  year="2025",
+  publisher="Springer Nature Switzerland",
+  address="Cham",
+  pages="173--189"
+  isbn="978-3-031-89350-6"
+}
+```
 
 ## Docker image
 
