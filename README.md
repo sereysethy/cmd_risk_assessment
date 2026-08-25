@@ -41,7 +41,7 @@ Once it is runs, go to [http://localhost:8000/docs](http://localhost:8000/docs "
 
 The risk model path is set in the `config.json` file.
 
-A default json config file that is located `/code`:
+A default json config file that is located `/code/src`:
 
 ```json
 {
@@ -54,7 +54,7 @@ A default json config file that is located `/code`:
 }
 ```
 
-This config file can be overried by mapping a custom file to `/code/config.json`.
+This config file can be overried by mapping a custom file to `/code/src/config.json`.
 In this case, the `var` folder has to be mapped to `/code/var` which should contain
 a trained risk model.
 
