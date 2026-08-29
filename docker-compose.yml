@@ -1,10 +1,11 @@
-version: '3'
 services:
   wsgi:
     restart: always
     build:
       context: .
       dockerfile: Dockerfile.wsgi
+    platform: ${ARCH}
+    image: stouch/cmd_risk_assessment:wsgi-${VERSION}
     volumes:
       - ./var:/code/var
 
@@ -13,8 +14,14 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.nginx
-    ports:
-      - "8000:80"
+    platform: ${ARCH}
+    image: stouch/cmd_risk_assessment:web-${VERSION}
+    # ports:
+    #   - "8000:80"
     depends_on:
       - wsgi
 
+networks:
+  default:
+    external: true
+    name: honeynet
